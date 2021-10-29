@@ -1,0 +1,125 @@
+/*font*/
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;700;900&display=swap');
+
+/*variables*/
+:root {
+    --bold: 900;
+    --regular: 700;
+    --thin: 500;
+
+    --pale-blue: hsl(225, 100%, 94%);
+    --bright-blue: hsl(245, 75%, 52%);
+
+    --very-pale-blue: hsl(225, 100%, 98%);
+    --desaturated-blue: hsl(224, 23%, 55%);
+    --dark-blue: hsl(223, 47%, 23%);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Red Hat Display', sans-serif;
+}
+
+/*body*/
+body {
+    background: url(/images/pattern-background-desktop.svg);
+    background-repeat: no-repeat;
+    background-size: 100% auto;
+    background-color: var(--pale-blue);
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.card {
+    width: 27.5%;
+    height: auto;
+    border-radius: 1em;
+    background: white;
+    overflow: hidden;
+}
+
+.card .header {
+    width: 100%;
+}
+
+.card-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.card .title {
+    font-size: 1.5em;
+    font-weight: var(--bold);
+    margin: 2rem 0 1rem;
+}
+
+.card .description {
+    margin: 0rem 2.5rem;
+    text-align: center;
+    color: var(--desaturated-blue);
+}
+
+.plan-card {
+    width: 80%;
+    height: 5.5rem;
+    margin: 1.8em;
+    border-radius: 1em;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background: var(--very-pale-blue);
+}
+
+.plan-card .icon {
+    width: 3em;
+    height: 3em;
+    margin: 1rem;
+}
+
+.plan-card .list {
+    margin-right: 2.5em;
+}
+
+.payment-plan {
+    font-weight: var(--bold);
+}
+
+.pricing {
+    color: var(--desaturated-blue);
+}
+
+.plan-card a {
+    margin: 2rem;
+    font-weight: var(--regular);
+    color: var(--bright-blue);
+}
+
+.btn {
+    width: 80%;
+    padding: 1em;
+    border-radius: 1rem;
+    font-size: 1rem;
+    font-weight: var(--bold);
+    text-align: center;
+    text-decoration: none;
+}
+
+.primary {
+    color: white;
+    margin-bottom: 0.8em;
+    background: var(--bright-blue);
+    box-shadow: 0 .5rem 2rem var(--desaturated-blue);
+}
+
+.secondary {
+    color: var(--desaturated-blue);
+    margin-bottom: 1.5em;
+}
